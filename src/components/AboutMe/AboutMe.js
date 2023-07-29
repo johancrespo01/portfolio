@@ -5,21 +5,21 @@ import logoLinkeind from "../../svg/linkedin.svg";
 import logoYoutube from "../../svg/youtube.svg";
 
 const AboutMe = () => {
-    const socialNetworks =[
+    const socialNetworks = [
         {
-            name:"Github",
-            link:"https://github.com/ivandevia",
-            logo:logoGithub,
+            name: "Github",
+            link: "https://github.com/johancrespo01",
+            logo: logoGithub,
         },
         {
-            name:"Linkedind",
-            link:"www.linkedin.com/in/ivan-devia-acosta-38b9aa141",
-            logo:logoLinkeind,
+            name: "Linkedind",
+            link: "www.linkedin.com/in/johan-crespo-castro-6722b5254",
+            logo: logoLinkeind,
         },
         {
-            name:"Youtube",
-            link:"https://www.youtube.com/channel/UC2Gv4AvSJOPFQ6pjGFk7U2g",
-            logo:logoYoutube,
+            name: "Youtube",
+            link: "https://www.youtube.com/@tecnotutoriales4230/videos",
+            logo: logoYoutube,
         },
     ];
 
@@ -29,29 +29,27 @@ const AboutMe = () => {
                 <S.ContainerText>
                     <S.Title>
                         <p>👋🏼 Hello, i'm</p>
-                        <p>Iván Devia Acosta</p>
-                        <p>Backend Developer</p>
+                        <p>Johan CRespo Castro</p>
+                        <p>FrontEnd Developer</p>
                     </S.Title>
                     <S.DescriptionText>
-                    Ing. de Sistemas, Mg. en Gestión de Tecnología Educativa, 
-                    Maestrante en Dirección Estratégica en Ing de Software, 
-                    con 17 años de experiencia en el sector productivo y educativo.
+                        Johan Crespo Castro Ing de sistemas, Desarrollador Frontend con 2+ años de experiencia en desarrollo web. Amplio dominio de Angular, React, Ionic y otros frameworks. Experto en HTML, CSS, Javascript y Git. Capacidad probada para trabajar colaborativamente en equipos de desarrollo. #DesarrolloWeb
                     </S.DescriptionText>
                     <S.ContainerIcons>
-                    {socialNetworks.map((network, index)=>(
-                        <a
-                            key={index}
-                            href={network.link}
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <img src={network.logo} alt={network.name}/>
-                        </a>
-                    ))}
-                </S.ContainerIcons>
+                        {socialNetworks.map((network, index) => (
+                            <a
+                                key={index}
+                                href={network.link}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img src={network.logo} alt={network.name} />
+                            </a>
+                        ))}
+                    </S.ContainerIcons>
                 </S.ContainerText>
                 <S.ContainerImage>
-                    <img src="/img/Logo.png" alt="Iván Devia - Backend Developer"/>
+                    <img src="/img/Logo.jpg" alt="Johan Crespo - FrontEnd Developer" />
                 </S.ContainerImage>
             </S.ContainerFlex>
         </S.ContainerAboutMe>

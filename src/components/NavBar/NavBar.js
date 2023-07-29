@@ -11,10 +11,10 @@ const NavBar = () => {
     return(
         <S.ContainerNavBar>
             <S.ContainerLogo>
-                <S.ImageLogo src="/img/Logo.jpeg" alt="Logo Ivan"/>
+                <S.ImageLogo src="/img/Logo.jpg" alt="Logo Ivan"/>
                 <div>
-                    <h1>Iván Devia</h1>
-                    <h2>Backend Developer</h2>
+                    <h1>Johan Crespo</h1>
+                    <h2>FrontEnd Developer</h2>
                 </div>
             </S.ContainerLogo>
             <S.ContainerBurguer onClick={() => setShowMenuBurguer(!showMenuBurguer)}>
